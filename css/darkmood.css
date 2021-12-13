@@ -1,0 +1,71 @@
+/*star dark mood*/
+.dark-mood i{
+ position: fixed;
+ bottom: 5%;
+ right: 5%;
+ color: #FFF;
+ background:var(--main-color);
+ padding: 10px;
+ border-radius: 50%;
+ cursor: pointer;
+ text-align: center}
+ 
+ .fa-sun {z-index:200}
+
+ .fa-cloud-moon{z-index: 400}
+ 
+ :root{
+--dark-backg:#323334;
+--dark-text:#FFF;
+--div-shadow:0px 1px 2px 2px rgba(0,0,0,0.1);}
+
+.dark{
+ background: var(--dark-backg);
+ color: var(--dark-text)}
+ 
+ /*dark nav*/
+ nav.dark{border: 0}
+ 
+ nav.dark .navbar-brand{color: var(--dark-text) !important}
+ 
+ nav.dark .navbar-form .form-control{
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-text)}
+ 
+nav.dark .form-group .form-control{
+ border: none;
+ background: var(--main-color);
+ color: var(--dark-text)}
+ 
+nav.dark ::-webkit-input-placeholder{color: var(--dark-text)!important}/*how to change place holder color*/
+  
+ /*cards*/ 
+ .card.dark{
+   background: var(--dark-backg);
+   color: var(--dark-text);
+   border-right:10px solid var(--dark-mood);
+   border-left:10px solid var(--dark-mood);
+   box-shadow: var(--div-shadow)}
+  
+  .card.dark:hover,
+  .new-customer-section.dark:hover,
+  .recent-project-section.dark:hover{
+   transform: scale(1.02);
+   z-index: 100;
+   transition: all 0.2s ease-in-out}
+  
+  .new-customer-section.dark{
+   border-right:10px solid var(--dark-mood);
+   border-left:10px solid var(--dark-mood);
+   box-shadow: var(--div-shadow)}
+  
+  .recent-project-section.dark{box-shadow: var(--div-shadow)}
+  
+  /*side bar*/
+ .side-bar.dark .sidebar-list li.active,
+ .side-bar.dark .sidebar-list li:hover{background: var(--main-color)}
+  
+ .side-bar.dark .sidebar-list li.active a,
+ .side-bar.dark .sidebar-list li:hover a{color: var(--dark-text)}
+ 
+/*end dark mood*/

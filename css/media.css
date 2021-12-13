@@ -1,0 +1,375 @@
+/*Start Media Query*/
+ 
+ /*smartphone & tablet (xs)*/
+ @media (max-width:768px)
+ {
+  
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{border: none}
+ 
+nav .container{
+width: 100% !important ;
+margin: 0 auto;
+padding: 0
+}
+
+.main-content{
+ margin-left: 10%;
+ margin-top: 30px;
+ width: 90%;}
+
+.main-content .container{
+width: calc(100% - 0px);
+margin: 0 auto;
+padding: 0
+}
+  
+ .navbar-collapse{
+ width:100% !important;
+ float: right;
+ display: inline !important;
+ justify-content: ;
+ padding-left: 0 !important
+ }
+ 
+ .navbar-collapse .navbar-left{
+  width: 70%;
+  display: inline-block;
+  float: left
+ }
+ 
+ .navbar-collapse .navbar-right{
+  width: 30%;
+  float: left
+ }
+  
+  .navbar-collapse .navbar-left .form-group .form-control{
+   display: inline;
+   width: 60%
+  }
+  
+.navbar-left{
+ margin: 0
+}
+
+.navbar-right {
+margin-right: 10px !important
+}
+
+.navbar-right .the-user {
+ 
+}
+  
+.navbar-right .the-user img{
+ width: 35px;
+ height: 35px;
+ border-radius: 50%;
+ margin:  0 5px  
+}
+
+.navbar-right .the-user div:last-child{
+ margin: 0 
+}
+
+.navbar-right .the-user div:last-child p:first-child{
+ font-size: 10px;
+ width: 100px
+}
+
+nav{
+ width: 90%;
+ margin-left: 10%
+}
+
+.side-bar{width:10%}
+
+.side-bar .sidebar-head h2{display: none}
+
+.side-bar .sidebar-list li{
+   text-align:center ;
+  padding: 9px;
+  margin: 10px 0}
+
+ .side-bar .sidebar-list li.active{margin-left: 0px}
+
+.side-bar .sidebar-list li i{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px}
+ 
+.side-bar .sidebar-list li span{display: none}
+
+.cards-section .card{margin-bottom: 10px}
+
+.cards-section .card:first-child{border-left:10px solid #EEE}
+
+.card.dark:first-child{border-left:10px solid var(--dark-backg)}
+
+.recent-project-section{
+ border-right: 10px solid #EEE;
+ border-left: 10px solid #EEE;
+ margin-top: 20px ;
+ margin-bottom: 0}
+
+.recent-project-section.dark{
+ border-right: 10px solid var(--dark-backg);
+ border-left: 10px solid var(--dark-backg);} 
+ 
+.new-customer-section{
+ margin-top: 30px ;
+ margin-bottom: 0;
+ border-left: 10px solid #EEE;
+ border-right: 10px solid #EEE}
+ 
+  /*animate xs*/
+  .side-bar.animate{
+   width:50%;
+   transition: all 0.5s ease-in-out;
+   z-index: 200}
+  
+   .side-bar.animate .sidebar-head{
+  text-align:center ;
+  padding: 9px;
+  margin-bottom: 50px;
+  }
+ 
+ .side-bar.animate .sidebar-head h2{
+  display: inline-block;
+  margin: auto;
+  font-weight: bold;
+  font-style: italic;
+  }
+   
+  .side-bar.animate .sidebar-list li span{display: inline}
+  
+  .side-bar.animate .sidebar-list li{
+  padding: 15px 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between
+  }
+ 
+ .side-bar.animate .sidebar-list li.active{
+  background-color: #fff;
+  margin-left: 5px;
+  border-radius: 50px 0 0 50px;
+ }
+ 
+ .side-bar.animate .sidebar-list li a i{
+  padding-right: 10px;
+  width: 35px;
+ }
+  
+   nav.animate{
+   width: 95%;
+   margin-left: 50%;
+   transition: all 0.5 ease-in-out}
+   
+  .main-content.animate{
+   width: 95%;
+   margin-left: 50%;
+   transition: all 0.5 ease-in-out}
+   /*animate xs*/ 
+  
+  
+ }/*xs*/
+ 
+ /*Small screen (sm)*/
+ @media (min-width:768px) and (max-width:991px)
+ {
+ 
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{border: none}
+   
+  .navbar-collapse{
+   width:100% ;
+   float: right;
+   display: flex ;
+   justify-content:space-between ;
+   padding: 0; 
+   }
+   
+  .navbar-collapse .navbar-left{padding-left: 55px}
+   
+  .navbar-collapse .navbar-right{width: 22%}
+    
+  .navbar-collapse .navbar-left .form-group .form-control{
+     display: inline;
+     width: 73%}
+  
+  .navbar-right {
+  margin-right: 10px !important
+  }
+  
+  .side-bar .sidebar-list li {
+  margin: 10px 0;
+  padding: 15px 20px 15px 3px;
+  font-weight: 400}
+ 
+  .side-bar .sidebar-list li.active{
+  margin-left: 0px;
+  border-radius: 0}
+ 
+  .side-bar .sidebar-list li a i{
+  padding-right: 25px;
+  width: 5px}
+ 
+  .side-bar .sidebar-list li span{
+  font-size: 5px}
+ 
+  .side-bar .sidebar-head{
+  margin-bottom: 15px;
+  margin-top: 9px} 
+  
+  .side-bar .sidebar-head h2{font-size: 17px}
+  
+  .cards-section .card .card-icon i{font-size: 25px}
+  
+  .cards-section .card:last-child{border-right:none} 
+  
+  .recent-project-section{
+  border-right:none;
+  border-left: none}
+  
+  .new-customer-section{
+  border-left: none;
+  border-right:none}
+ 
+ 
+  /*animate sm*/
+  .side-bar.animate{
+   width:5%;
+   transition: all 0.5s ease-in-out}
+  
+  .side-bar.animate .sidebar-head h2{display: none}
+  
+  .side-bar.animate .sidebar-head i {
+   text-align: center;
+   padding: 5px 0;
+   font-size: 20px;}
+   
+  .side-bar.animate .sidebar-list li span{display: none}
+  
+  .side-bar.animate .sidebar-list li i{
+    text-align: center;
+   padding:0 25%;
+   font-size: 20px;
+  }
+  
+   nav.animate{
+   width: 95%;
+   margin-left: 5%;
+   transition: all 0.5 ease-in-out}
+   
+  .main-content.animate{
+   width: 95%;
+   margin-left: 5%;
+   transition: all 0.5s ease-in-out}
+   /*animate sm*/
+ 
+ }/*sm*/
+ 
+ /*medium screen (md)*/
+ @media (min-width:991px) and (max-width:1199px)
+ {
+  
+  .navbar-collapse{
+   width:100% ;
+   float: right;
+   display: flex ;
+   justify-content:space-between ;
+   padding: 0; 
+   }
+   
+  .navbar-collapse .navbar-left{
+   padding-left: 65px;
+   width: 80%
+   }
+   
+  .navbar-collapse .navbar-right{width: 20%}
+    
+  .navbar-collapse .navbar-left .form-group .form-control{width: 70%}
+  
+  .side-bar .sidebar-list li {
+   margin: 10px 0;
+   padding: 15px 20px 15px 5px;
+   font-weight: 400}
+ 
+  .side-bar .sidebar-list li.active{
+   margin-left: 0px;
+   border-radius: 0}
+ 
+  .side-bar .sidebar-list li a i{
+  padding-right: 25px;
+  width: 5px}
+  
+  .side-bar .sidebar-list li span{font-size: 15px}
+  
+  .side-bar .sidebar-head{
+  margin-bottom: 17px;
+  margin-top: 10px;
+  padding: 0}
+  
+  .side-bar .sidebar-head h2{
+   font-size: 25px;}
+  
+  .cards-section .card .card-icon i{font-size: 30px}
+  
+  /*animate md*/
+  .side-bar.animate{
+   width:5%;
+   transition: all 0.5s ease-in-out}
+  
+  .side-bar.animate .sidebar-head h2{display: none}
+  
+  .side-bar.animate .sidebar-head i {
+   text-align: center;
+   padding: 5px;
+   font-size: 20px;}
+   
+  .side-bar.animate .sidebar-list li span{display: none}
+  
+   nav.animate{
+   width: 95%;
+   margin-left: 5%;
+   transition: all 0.5 ease-in-out}
+   
+  .main-content.animate{
+   width: 95%;
+   margin-left: 5%;
+   transition: all 0.5s ease-in-out}
+   /*animate md*/
+  
+ }/*md*/
+ 
+ /*large screen (lg)*/
+ @media (min-width:1200px)
+ {
+  
+  /*animate lg*/
+  .side-bar.animate{
+   width:5%;
+   transition: all 0.5 ease-in-out}
+  
+  .side-bar.animate .sidebar-head h2{display: none}
+  
+  .side-bar.animate .sidebar-head i {
+   text-align: center;
+   padding: 5px;
+   font-size: 20px;}
+   
+  .side-bar.animate .sidebar-list li span{display: none}
+  
+   nav.animate{
+   width: 95%;
+   margin-left: 5%;
+   transition: all 0.5s ease-in-out}
+   
+  .main-content.animate{
+   width: 95%;
+   margin-left: 5%;
+   transition: all 0.5s ease-in-out}
+   /*animate lg*/
+
+ }
+ 
+ /*End Media Query*/
+ 
